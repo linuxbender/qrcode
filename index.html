@@ -33,24 +33,50 @@
       </header>
       <section>
         <h3>Welcome to GitHub Pages.</h3>
+        <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <pre><code>$ cd your_repo_root/repo_name
+        $ git fetch origin
+        $ git checkout gh-pages
+        </code></pre>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <h3>Designer Templates</h3>
 
-<h3>Designer Templates</h3>
+        <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+        <h3>Support or Contact</h3>
 
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
+      <section class="row-fluid">
+			<header class="span12">
+			    <!-- Image Placeholder -->
+			</header>			
+			<section class="span4">
+			    <h3>Qr Options :</h3>
+			    <form data-bind="submit: postOptions" class="well">
+                    <label>Size :</label>
+                        <select name="chs" data-bind="options: optionSize, value: selectedOptionSize" class="input-small">                        
+                    </select>
+                    <label>Encoding :</label>
+                        <select name="choe" data-bind="options: optionEncoding, value: selectedOptionEncoding" class="input-small">                        		        
+                    </select>
+                    <label>Error Correction :</label>
+                        <select name="chld" data-bind="options: optionCorrection, value: selectedOptionCorrection" class="input-small">                        
+                    </select>                
+                    <label>URL :</label>
+                    <textarea name="chl" data-bind="value: qrText ,attr: { placeholder: qrInfoText }"></textarea>
+                                        
+                    <button type="submit" class="btn btn-primary" >Build</button>
+                    <!-- data-bind="enable: qrText().length > 0" -->
+			    </form>			  
+			</section>
+			<section class="span6">
+			<h3>Result :</h3>
+			<canvas id="canvas" width="300" height="300" >If you see this message. Your Browser don't support HTML5'</canvas>
+			</section>		    
       <footer>
         <p>This project is maintained by <a href="https://github.com/linuxbender">linuxbender</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
