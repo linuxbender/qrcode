@@ -26,5 +26,5 @@ QR Code Gen with JQuery and KnockoutJs
 ## Chart service Qr code
 https://developers.google.com/chart/infographics/docs/qr_codes
 
-# Running Example
+# Running Example on github page
 - http://linuxbender.github.com/qrcode/
